@@ -1,7 +1,10 @@
 const tiles = [
-  { title: 'Playlists', text: 'Rangées comme des 33 tours.' },
-  { title: 'Hors ligne', text: 'Téléchargez, écoutez partout.' },
-  { title: 'Paroles', text: 'En direct, sous le diamant.' },
+  { title: 'Playlists', text: 'Rangées sur une étagère, comme des 33 tours.' },
+  { title: 'Albums & titres likés', text: 'Toute votre bibliothèque Apple Music ou Spotify.' },
+  { title: 'Pages artiste', text: 'Discographie et titres phares, en un clic.' },
+  { title: 'Paroles', text: 'Synchronisées, défilent avec le morceau.' },
+  { title: 'Carte de partage', text: 'Une image PNG du disque en cours, à partager.' },
+  { title: 'Widget de bureau', text: 'Un vrai widget macOS pour Apple Music.' },
 ]
 
 export default function Bibliotheque() {

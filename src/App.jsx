@@ -5,8 +5,8 @@ import Halos from './components/Halos.jsx'
 import FollowDisc from './components/FollowDisc.jsx'
 import Nav from './components/Nav.jsx'
 import Hero from './components/Hero.jsx'
-import Ecoute from './components/Ecoute.jsx'
-import Son from './components/Son.jsx'
+import Platine from './components/Platine.jsx'
+import Personnaliser from './components/Personnaliser.jsx'
 import Bibliotheque from './components/Bibliotheque.jsx'
 import Telecharger from './components/Telecharger.jsx'
 import Footer from './components/Footer.jsx'
@@ -15,19 +15,20 @@ import MiniPlayer from './components/MiniPlayer.jsx'
 export default function App() {
   const { stop, y, progress } = useScrollStop()
   const [playing, setPlaying] = useState(true)
+  const [texture, setTexture] = useState('black')
   const current = stops[stop]
 
   return (
     <div className="relative min-h-screen overflow-x-clip font-sans">
       <Halos />
-      <FollowDisc stop={current} rotation={Math.round(y * 0.25)} playing={playing} />
+      <FollowDisc stop={current} texture={texture} rotation={Math.round(y * 0.25)} playing={playing} />
 
       <div className="relative z-2 mx-auto max-w-[1180px] px-5 pt-6">
         <Nav />
         <main>
           <Hero />
-          <Ecoute />
-          <Son />
+          <Platine />
+          <Personnaliser texture={texture} onChange={setTexture} />
           <Bibliotheque />
           <Telecharger />
         </main>

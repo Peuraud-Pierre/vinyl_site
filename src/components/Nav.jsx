@@ -1,6 +1,6 @@
 const links = [
-  { href: '#ecoute', label: 'Écoute' },
-  { href: '#son', label: 'Le son' },
+  { href: '#platine', label: 'La platine' },
+  { href: '#personnaliser', label: 'Personnaliser' },
   { href: '#bibliotheque', label: 'Bibliothèque' },
 ]
 

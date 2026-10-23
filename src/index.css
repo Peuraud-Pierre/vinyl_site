@@ -74,6 +74,9 @@
 @utility grooves-fine {
   background: repeating-radial-gradient(circle, #141416 0 1.5px, #222228 1.5px 2.5px);
 }
+@utility grooves-overlay {
+  background: repeating-radial-gradient(circle, rgba(0, 0, 0, .16) 0 2px, rgba(0, 0, 0, 0) 2px 3px);
+}
 @utility disc-shine {
   background: conic-gradient(from 20deg, rgba(255, 255, 255, 0) 0deg, rgba(255, 255, 255, .18) 30deg, rgba(255, 255, 255, 0) 70deg, rgba(255, 255, 255, 0) 180deg, rgba(255, 255, 255, .13) 210deg, rgba(255, 255, 255, 0) 250deg);
 }
